@@ -1,0 +1,817 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+ 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #3275db;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    gap: 20px; /* Space between contact info items */
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Auth Links */
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make links bold */
+    padding: 0 10px; /* Space around links */
+}
+
+.auth a.login {
+    border-right: 1px solid white; /* Separation line */
+    padding-right: 10px; /* Space between text and line */
+}
+
+.auth a:hover {
+    color: #00b4d8; /* Change color on hover */
+}
+
+/* Header and Hero Background Wrapper */
+.header-hero-wrapper {
+    background: url('pci14.jpg') no-repeat center center/cover;
+    position: relative;
+    padding-top: 20px; /* Adjust padding as needed */
+    
+}
+
+header {
+    border-bottom: 1px solid white; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px; /* Adjust padding as needed */
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    line-height: 1; /* Reduces space between lines */
+}
+
+.logo span {
+    font-size: 16px; /* Adjust font size for "INSTITUTE" */
+    font-weight: normal; /* Adjust font weight if needed */
+    display: block; /* Forces "INSTITUTE" to be on a new line */
+    margin-top: 0; /* Removes any margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative; /* Make the li relative for positioning the dropdown */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3275db; /* Background color for dropdown */
+    border: 1px solid white; /* Border color */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li .dropdown-menu li {
+    padding: 10px;
+}
+
+nav ul li .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #00b4d8; /* Hover background color */
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for the header icons */
+.header-icons {
+    display: flex;
+    gap: 15px; /* Space between heart and search icon */
+}
+
+.header-icons a {
+    color: white;
+    font-size: 18px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.header-icons a:hover {
+    color: #00b4d8; /* Change color on hover */
+}
+
+.search-box {
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px; /* Adjust icon size */
+    cursor: pointer;
+}
+
+.vertical-divider {
+    margin: 0 10px;
+    border-left: 1px solid white;
+    height: 15px;
+    display: inline-block;
+}
+.hero {
+    color: white;
+    padding: 120px 20px 80px 20px; /* Adjust padding as needed */
+    text-align: center;
+    position: relative;
+}
+
+/* Style for the new content in the hero section */
+.center-content {
+    margin-top: 40px; /* Adjust margin as needed */
+}
+
+.center-content h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.center-content i {
+    color: #00b4d8; /* Color for the heart icon */
+}
+
+.center-links {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.center-links a {
+    color: white;
+    font-weight: bold;
+    margin: 0 20px; /* Adjust spacing between links */
+    text-decoration: none;
+}
+
+.center-links a:hover {
+    color: #00b4d8; /* Change color on hover */
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2; /* Adjust line height for spacing */
+}
+
+.hero h1 span {
+    color: #00b4d8;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center; /* Center the search box */
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background: #00b4d8; /* Button background color */
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px; /* Adjust icon size */
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Rounded corners for the button */
+}
+
+.search-box button i {
+    font-size: 18px; /* Adjust icon size */
+}
+
+
+/* How it Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.how-it-works .step {
+    width: 30%;
+    padding: 10px;
+}
+
+.how-it-works .step img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Courses Section */
+.courses {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.course img {
+    width: 100px;
+    height: 100px;
+}
+
+.course p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Social Icons in Top Bar */
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-left: 20px; /* Space between working hours and icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 14px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00b4d8; /* Change color on hover */
+}
+
+.bracketed-icon {
+    font-weight: normal; /* Keep the brackets normal weight */
+    font-size: 16px; /* Adjust size as needed */
+    color: white; /* Color of the brackets */
+}
+
+.bracketed-icon i {
+    margin: 0 5px; /* Space between the icon and brackets */
+}
+
+/* course section*/
+.course {
+    width: calc(25% - 20px);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the pop-up effect */
+}
+
+.course img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.course p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.course:hover {
+    transform: translateY(-10px); /* Move the entire course block up */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.course:hover img {
+    transform: scale(1.1); /* Slightly scale up the image */
+}
+
+/* Limited-Time Summer Course Bundles Section */
+.course-bundles {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-bundles h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-bundles p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.bundle-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bundle {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bundle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bundle-header {
+    background-color: #3275db;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
+
+.bundle-body p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bundle-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bundle-body ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bundle-body ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bundle-body ul li span {
+    font-weight: bold;
+}
+
+.bundle-body ul li.discounted {
+    font-size: 20px;
+    color: red;
+}
+
+.bundle-body ul li.discounted .original-price {
+    text-decoration: line-through;
+    color: #666;
+    margin-left: 10px;
+}
+
+.internship-section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.internship-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.internship-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.internship-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.internship-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.internship-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.internship-card p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.internship-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.internship-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.internship-card ul li strong {
+    font-weight: bold;
+}
+
+.read-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+.load-more {
+    margin-top: 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+    background-color: #0056b3;
+}
+
+.institute-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.institute-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.blue-bar {
+    height: 2px;
+    width: 100%;
+    background-color: #007bff;
+    margin-left: 1rem;
+    position: absolute;
+    bottom: -5px;
+}
+
+/* Container for the entire section */
+.learning-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Image container with cursor-based movement */
+  .image-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .learning-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Add movement based on cursor position */
+  .image-container:hover .learning-image {
+    transform: scale(1.1);
+  }
+  
+  .image-container:hover {
+    cursor: pointer;
+  }
+  
+  .image-container:hover .learning-image {
+    transition: transform 0.5s ease;
+    animation: imageMove 2s ease-out infinite alternate;
+  }
+  
+  @keyframes imageMove {
+    0% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+  }
+  
+  /* Content container on the right side */
+  .content-container {
+    width: 45%;
+    padding-left: 50px;
+  }
+  
+  /* Heading styles */
+  .learning-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black; /* Dark Blue Color */
+  }
+  
+  .blur-text {
+    color:#007bff; /* Blurred Blue Color */
+  }
+  
+  /* Paragraph styles */
+  .learning-paragraph {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  /* Download links styles */
+  .download-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .app-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #003366;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .app-store:hover {
+    background-color: #004080;
+  }
+  
+  .google-play:hover {
+    background-color: #00509e;
+  }
+
+/* Investing Section */
+.investing-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.full-screen-image {
+    background-image: url('background2.PNG'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Ensure image is behind the overlay and content */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 64, 128, 0.7); /* Dark blue overlay with opacity for better text contrast */
+    z-index: 2; /* Ensure this is above the image but below the content */
+}
+
+.investing-content {
+    position: absolute;
+    top: 0; /* Align text to the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3; /* Ensure content is above the image and overlay */
+    color: white;
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add padding if needed */
+}
+
+.investing-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.highlight {
+    color: #1E90FF; /* Blue color for "start" and "yourself" */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #062a48; /* Darker Blue */
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    padding-left: 80px; /* Extra space on the left */
+    padding-right: 80px; /* Extra space on the right */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Ensure content is centered */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 180px;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 0.85em; /* Smaller text */
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .contact li {
+    display: flex;
+    align-items: center;
+    font-size: 0.82em; /* Smaller text */
+}
+
+.footer-section .contact li i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff40; /* Light white border */
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
